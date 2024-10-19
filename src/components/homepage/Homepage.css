@@ -7,6 +7,9 @@
 body{
     background: #000;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 .homepage-container {
     position: relative;
     height: 100vh;
@@ -18,7 +21,7 @@ body{
 
 .navbar {
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 0;
     width: 100%;
     display: flex;
@@ -68,28 +71,26 @@ body{
 
 .belownavbar {
     position: relative;
+    top: 100px;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    border: 2px solid red;
+    
 }
 
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
 
 .content {
+    width: 100%;
+   
+    
     color: #fff;
     font-size: 2rem;
     text-align: center;
     padding: 2rem;
+    /* border: 2px solid red; */
 }
 
