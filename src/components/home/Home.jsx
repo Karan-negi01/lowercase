@@ -5,7 +5,7 @@ import './Home.css'
 const Home = () => {
   return (
     <div>
-      <video className="background-video" src={homevideo} autoPlay loop muted />
+      <video className="background-video" src={homevideo} loop autoPlay muted />
     </div>
   )
 }
