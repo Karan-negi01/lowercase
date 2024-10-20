@@ -74,23 +74,11 @@ body{
     top: 100px;
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     z-index: 1;
     /* border: 2px solid red; */
     
 }
 
 
-.content {
-    width: 100%;
-   
-    
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
-    padding: 2rem;
-    /* border: 2px solid red; */
-}
 

@@ -1,24 +1,23 @@
 import React from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, Navigate, useNavigate } from 'react-router-dom';
 import './Homepage.css';
 
 import About from '../about/About';
 import Home from '../home/Home';
 import Collaboration from '../collaboration/Collaboration';
-import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
-import { CiTwitter } from "react-icons/ci";
+
 import Artist from '../artist/Artist';
 import Gallery from '../gallery/Gallery';
+import Events from '../events/Events';
+import Footer from '../footer/Footer';
 
 const Homepage = () => {
-    const navigate = useNavigate();  
+    const navigate = useNavigate();
 
-   
-  
+
+
     const handleNavbarClick = (page) => {
-        navigate(page);  
+        navigate(page);
     };
 
     return (
@@ -40,67 +39,20 @@ const Homepage = () => {
 
             <div className="belownavbar">
                 <Routes>
-                    <Route path="/Home" element={<Home/>}/>
-                    <Route path="/About" element={<About/>} />
-                    <Route path="/Artist" element={<Artist/>} />
-                    <Route path="/Collaboration" element={<Collaboration/>} />
-                    <Route path="/Events" element={<div className="content">Upcoming Events</div>} />
-                    <Route path="/Gallery" element={<Gallery/>} />
+                    <Route path="/" element={<Navigate to="/Home" />} />
+                    <Route path="/Home" element={<Home />} />
+                    <Route path="/About" element={<About />} />
+                    <Route path="/Artist" element={<Artist />} />
+                    <Route path="/Collaboration" element={<Collaboration />} />
+
+                    <Route path="/Events" element={<Events />} />
+                    <Route path="/Gallery" element={<Gallery />} />
+                    <Route path="/Footer" element={<Footer />} />
                 </Routes>
             </div>
-            
- 
-            <div className="lisenced">
-                    <div className="lisenced-logo">
-                        <div className="logo-border">
-
-                            Lower Case Events
-                        </div>
-                    </div>
-                    <div className="lisenced-note">
-                        COPYRIGHT © 2024 Lower Case Events | Lower Case Events ltd. ALL RIGHTS RESERVED.
-                    </div>
-                </div>
-
-                <div className="footer">
-
-                    <div className="footer-box1">
-                        <p className='footer-heading' >LOWER CASE EVENTS</p>
-                        <ul>
-                            <li>About</li>
-                            <li>Artist</li>
-                            <li>Collaborations</li>
-                            <li>Events</li>
-                            <li>Gallery</li>
-                        </ul>
-                    </div>
-                    <div className="footer-box2">
-                        <p className='footer-heading' >ENQUIRIES</p>
-                        <ul>
-                            <li>Reach us by email or chat for enquiries and bookings.
-
-                            </li>
-                            <li>info@lower-case.co
-                            London UK</li>
-
-                        </ul>
-                    </div>
-                    <div className="footer-box3">
-                        <div className="footer-heading">
-                            SOCIAL MEDIA
-                        </div>
-                        <div className="social-icons">
-                        <FaInstagram   className='footer-icons' />
-                        <FaWhatsapp  className='footer-icons' />
-                        <FaFacebookSquare  className='footer-icons' />
-                        <CiTwitter  className='footer-icons' />
 
 
 
-                        </div>
-
-                    </div>
-                </div>
         </div>
     );
 };
