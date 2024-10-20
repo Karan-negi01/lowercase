@@ -17,6 +17,9 @@ const Collaboration = () => {
     return (
         <div>
             <div className="collab_container">
+                <div className="collab-heading">
+                    COLLABORATIONS
+                </div>
 
 
 

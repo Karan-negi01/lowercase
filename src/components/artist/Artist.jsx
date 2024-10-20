@@ -35,7 +35,10 @@ const Artist = () => {
   return (
     <div>
       <div className="artist_container">
-       
+        <div className="artist-heading">
+          ARTIST
+        </div>
+         
         <div className="artist_gallery">
           {artists.map((artist, index) => (
             <div className="artist_box" key={index}>

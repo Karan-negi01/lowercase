@@ -35,6 +35,11 @@ const About = () => {
     return (
         <div>
             <div className="about_container">
+                
+
+                <div className="about-heading">
+                    ABOUT
+                </div>
 
                 {/* Box1 banner */}
                 <div className="banner">

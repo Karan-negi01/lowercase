@@ -14,21 +14,24 @@
     flex-direction: column;
 }
 
-/* .collab_title{
+.collab-heading{
+    width: 40%;
+    height: 10vh;
+    /* border: 2px solid red; */
     color: #fff;
-    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 34px;
-    font-weight: 600;
+    font-size: 60px ;
+    margin: auto;
     text-align: center;
-    margin-bottom: 20px;
-    padding-top: 10px;
-} */
+    align-content: center;
+    font-weight: bolder;
+    margin-top: 40px;
+}
 
 .collab_banner{
     width: 100%;
-    
+    margin-top: 50px;
     /* border: 2px solid white;  */
-    height: 90vh;
+    height: 100%;
 }
 
 .collab_banner video{
